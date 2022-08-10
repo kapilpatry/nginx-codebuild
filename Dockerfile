@@ -1,4 +1,7 @@
-FROM alpine:3.10
+#FROM alpine:3.10
+
+# Select Source Docker/OS
+FROM amazonlinux:latest
 
 LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 
