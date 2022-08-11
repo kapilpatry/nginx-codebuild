@@ -114,6 +114,7 @@ RUN set -x \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 
 COPY demo.html /usr/share/nginx/html/
+COPY index.php /usr/share/nginx/html/
 EXPOSE 80
 STOPSIGNAL SIGTERM
 CMD ["nginx", "-g", "daemon off;"]
